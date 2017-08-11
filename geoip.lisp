@@ -5,5 +5,6 @@
    (babel:octets-to-string
     (first
      (multiple-value-list
-      (drakma:http-request (concatenate 'string "https://ip.briantafoya.com/" ip "/json")
+      (drakma:http-request
+       (concatenate 'string "https://ip.briantafoya.com/" ip "/json")
 			   :method :get))))))
